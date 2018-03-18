@@ -1,4 +1,4 @@
- Open [http://localhost:8080](http://localhost:8080)
+Open [http://localhost:8080](http://localhost:8080)
 
 ## Available Commands
 
@@ -19,4 +19,5 @@ The coverage report consists of an HTML reporter, which can be viewed in the bro
 ## Production code
 
 Run `npm run production`. The production-ready code will be located under `dist` folder.
+
 
