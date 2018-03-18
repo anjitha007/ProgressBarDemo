@@ -14,7 +14,7 @@ describe('App Component', () => {
     expect(wrapper).toBeTruthy();
     expect(wrapper.find('.container').type()).toEqual('div');
     expect(wrapper.exists(<ButtonContainer
-     buttons={[2]} onChange={jest.fn()} onClick={jest.fn()} />)).toBe(true);
+     buttons={[2]} options={[3,3]} onChange={jest.fn()} onClick={jest.fn()} />)).toBe(true);
      expect(wrapper.exists( <ProgressBar progress={0} index={0} limit={100} />)).toBe(true);
   });
   

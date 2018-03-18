@@ -6,7 +6,7 @@ import DropDown from './DropDown';
 const ButtonContainer = (props) => {
   return (
     <div className="button-container">
-      <DropDown onChange={props.onChange} />
+      <DropDown options={props.options} onChange={props.onChange} />
       {props.buttons.map((item, index) =>
         <Button label={item} index={index} onClick={props.onClick} />)
       }
@@ -16,6 +16,7 @@ const ButtonContainer = (props) => {
 
 ButtonContainer.propTypes = {
   buttons: PropTypes.arrayOf(PropTypes.number).isRequired,
+  options: PropTypes.arrayOf(PropTypes.number).isRequired,
   onChange: PropTypes.func.isRequired,
   onClick: PropTypes.func.isRequired,
 };

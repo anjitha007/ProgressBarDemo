@@ -8,8 +8,10 @@ describe('ButtonContainer Component', () => {
   const onClick = jest.fn();
   const onChange = jest.fn();
   const buttons = [25,35, -10,40];
+  const options = [25, 40]
   beforeEach(() => {
     wrapper = shallow(<ButtonContainer buttons={buttons}
+      options={options}
       onClick={onClick}
       onChange={onChange} />);
   });

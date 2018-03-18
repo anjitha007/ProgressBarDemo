@@ -44,7 +44,7 @@ class App extends React.Component {
     }
     this.setState({
       bars,
-    })
+    });
   };
 
   render() {
@@ -57,6 +57,7 @@ class App extends React.Component {
           }
           <ButtonContainer
             buttons={this.state.buttons}
+            options={this.state.bars}
             onChange={this.onChange}
             onClick={this.onClick}
           />
