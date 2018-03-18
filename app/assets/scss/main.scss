@@ -1,0 +1,92 @@
+$color: #262828;
+
+body {
+  color: $color;
+}
+
+.container{
+  display: table;
+  width: 60%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#heading{
+ text-align: center;
+}
+
+.progressbar-container{
+  display: flex;
+  width: 70%;
+  padding: 100px;
+  background: #808000;
+  flex-direction: column;
+}
+
+.progress {
+  background-color: #EAEDED;
+  border-radius: 13px; 
+  padding: 3px;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.bar-alert {
+  background-color: red;
+  height: 30px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.bar {
+  background-color: orange;
+  height: 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.button{
+  background-color: orange;
+  border: none;
+  color: black;
+  height: 31px;
+  width: 40px;
+  cursor: pointer;
+}
+
+.button-container{
+  display:flex;
+  align-items: center;
+  width: 70%;
+}
+.button-container > .button{
+  margin: 10px;
+}
+select{
+  background: orange;
+  width: 250px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  font-size: 16px;
+  line-height: 1;
+  border: 0;
+  border-radius: 0;
+  height: 34px;
+  -webkit-appearance: none;
+}
+
+.styled-select {
+  height: 30px;
+  overflow: hidden;
+ }
+ .display{
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  text-align:center;
+  padding-top: 8px;
+ }
+
